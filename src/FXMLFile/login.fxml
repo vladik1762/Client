@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.loginController">
+   <children>
+      <AnchorPane fx:id="anchorPaneReg" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="408.0" fitWidth="343.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../a6a84d1acc287a7181c7cdbdb9dad1eb--moscow.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="nameFieldForReg" labelFloat="true" layoutX="414.0" layoutY="98.0" prefHeight="22.0" prefWidth="134.0" promptText="Имя" unFocusColor="#5744ba">
+               <font>
+                  <Font name="Cambria Italic" size="11.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="emailFieldForReg" labelFloat="true" layoutX="414.0" layoutY="186.0" prefHeight="22.0" prefWidth="134.0" promptText="E-mail" unFocusColor="#5744ba">
+               <font>
+                  <Font name="Cambria Italic" size="11.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordFieldForReg" labelFloat="true" layoutX="414.0" layoutY="228.0" prefHeight="27.0" prefWidth="134.0" promptText="Пароль" unFocusColor="#5744ba">
+               <font>
+                  <Font name="Cambria Italic" size="11.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="passwordRepeatFieldForReg" labelFloat="true" layoutX="413.0" layoutY="275.0" prefHeight="27.0" prefWidth="134.0" promptText="Повторить пароль" unFocusColor="#5744ba">
+               <font>
+                  <Font name="Cambria Italic" size="11.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="loginFieldForReg" labelFloat="true" layoutX="414.0" layoutY="139.0" prefHeight="22.0" prefWidth="134.0" promptText="Логин" unFocusColor="#5744ba">
+               <font>
+                  <Font name="Cambria Italic" size="11.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="regButtonForReg" layoutX="419.0" layoutY="345.0" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #dcdcdc;" text="Зарегистрироваться" textFill="#5744ba">
+               <font>
+                  <Font name="Cambria Bold" size="10.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#5744ba" layoutX="385.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация" wrappingWidth="191.99997558593736">
+               <font>
+                  <Font name="Cambria Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneLog" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXTextField fx:id="loginFieldForLog" labelFloat="true" layoutX="419.0" layoutY="135.0" prefHeight="22.0" prefWidth="134.0" promptText="Логин" unFocusColor="#5744ba">
+               <font>
+                  <Font name="Cambria Italic" size="11.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordFieldForLog" labelFloat="true" layoutX="421.0" layoutY="184.0" prefHeight="27.0" prefWidth="134.0" promptText="Пароль" unFocusColor="#5744ba">
+               <font>
+                  <Font name="Cambria Italic" size="11.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="sigInButtonForLog" layoutX="505.0" layoutY="264.0" prefHeight="26.0" prefWidth="68.0" ripplerFill="#5744ba" style="-fx-background-color: #dcdcdc;" text="Войти" textFill="#5744ba">
+               <font>
+                  <Font name="Cambria Bold" size="11.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="408.0" fitWidth="343.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../a6a84d1acc287a7181c7cdbdb9dad1eb--moscow.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#5744ba" layoutX="381.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Авторизация" wrappingWidth="204.0000366210936">
+               <font>
+                  <Font name="Cambria Bold" size="30.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="registrationButton" layoutX="399.0" layoutY="264.0" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #dcdcdc;" text="Регистрация" textFill="#5744ba">
+               <font>
+                  <Font name="Cambria Bold" size="11.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
